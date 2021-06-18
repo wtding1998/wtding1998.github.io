@@ -2,6 +2,7 @@ baseURL = "https://wtding1998.github.io/"
 title = "Wentao Ding"
 theme = "hugo-notepadium"
 copyright = "©2020 Notepadium."
+publishDir = "docs"
 
 languageCode = "en"  # for the RSS generation
 defaultContentLanguage = "en"
