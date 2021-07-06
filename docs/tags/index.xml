@@ -6,9 +6,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>©2020 Notepadium.</copyright>
+    <lastBuildDate>Tue, 06 Jul 2021 15:33:31 +0800</lastBuildDate>
     
         <atom:link href="https://wtding1998.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test_hugo</title>
+      <link>https://wtding1998.github.io/posts/test_hugo/</link>
+      <pubDate>Tue, 06 Jul 2021 15:33:31 +0800</pubDate>
+      
+      <guid>https://wtding1998.github.io/posts/test_hugo/</guid>
+      <description>&lt;p&gt;This test the function of hugo.&lt;/p&gt;
+&lt;p&gt;The solution of the equation \( ax^2 + bx + c = 0 \) is&lt;/p&gt;
+&lt;p&gt;\begin{align}
+x_1 = \frac{-b + \sqrt{b^2 - 4ac}}{2a}\\\&lt;br&gt;
+x_2 = \frac{-b - \sqrt{b^2 - 4ac}}{2a}
+\end{align}&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>About</title>
