@@ -11,20 +11,6 @@
     
     
     <item>
-      <title>Test</title>
-      <link>https://wtding1998.github.io/posts/test/</link>
-      <pubDate>Fri, 18 Jun 2021 16:07:44 +0800</pubDate>
-      
-      <guid>https://wtding1998.github.io/posts/test/</guid>
-      <description>&lt;h2 id=&#34;test&#34;&gt;Test&lt;/h2&gt;
-&lt;p&gt;some sentence&lt;/p&gt;
-&lt;h3 id=&#34;latex-test&#34;&gt;latex test&lt;/h3&gt;
-&lt;p&gt;If \(a^2=b\) and \( b=2 \), then the solution must be either
-\[ a=+\sqrt{2} \] or \[ a=-\sqrt{2} \]&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>https://wtding1998.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
