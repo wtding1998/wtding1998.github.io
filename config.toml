@@ -57,7 +57,7 @@ use = "mathjax"  # builtin: "katex", "mathjax".  default: "katex"
 [params.syntax]
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
 theme = "github"
-darkTheme = "dracula"
+darkTheme = "xcode-dark"
 
 # [params.profile]
 #   enable = true

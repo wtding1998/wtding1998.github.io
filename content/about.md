@@ -11,9 +11,13 @@ I am a Ph.D. student in school of data science at The Chinese University of Hong
 - Tensor Optimization
 - Manifold Optimization
 
-## Contact
-E-mail: 220049024@link.cuhk.edu.cn
+## Preprint
+- [Projectively and weakly simultaneously diagonalizable matrices and their applications](https://arxiv.org/abs/2205.13245)
+, W Ding, J Li, S Zhang, arXiv preprint, arXiv:2205.13245, 2022
 
-DY 322, The Chinese University of Hong Kong(Shenzhen)
+## Contact
+E-mail: wentaoding@link.cuhk.edu.cn
+
+DY 324, The Chinese University of Hong Kong(Shenzhen)
 
 The  2001 Longxiang Road, Longgang District, Shenzhen
