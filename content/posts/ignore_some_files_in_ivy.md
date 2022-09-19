@@ -1,8 +1,8 @@
 +++
 title = "ignore some files in ivy"
 author = ["Wentao Ding"]
-lastmod = 2022-09-17T00:30:07+08:00
-tags = ["emacs", "tex", "myCode"]
+lastmod = 2022-09-18T22:49:20+08:00
+tags = ["emacs", "tex", "ivy"]
 categories = ["emacs"]
 draft = false
 +++
