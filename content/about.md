@@ -1,5 +1,5 @@
 +++
-title = "About"
+title = "About Me"
 description = "Hugo, the world's fastest framework for building websites"
 aliases = ["about-us", "about-hugo", "contact"]
 author = "Hugo Authors"
