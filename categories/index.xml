@@ -1,4 +1,29 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Wentao Ding</title><link>https://wtding1998.github.io/categories/</link><description>Recent content in Categories on Wentao Ding</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2020 Notepadium.</copyright><lastBuildDate>Mon, 19 Sep 2022 22:30:41 +0800</lastBuildDate><atom:link href="https://wtding1998.github.io/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Equivalent first order optimality conditions over Stiefel manifold</title><link>https://wtding1998.github.io/posts/equivalent_first_order_optimality_condition_over_stiefel_manifold/</link><pubDate>Mon, 19 Sep 2022 22:30:41 +0800</pubDate><guid>https://wtding1998.github.io/posts/equivalent_first_order_optimality_condition_over_stiefel_manifold/</guid><description>&lt;p>This post is a short summary of equivalent first order optimality conditions collected from several papers for the smooth optimization problem over Stiefel manifold.&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Wentao Ding</title><link>https://wtding1998.github.io/categories/</link><description>Recent content in Categories on Wentao Ding</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2020 Notepadium.</copyright><lastBuildDate>Mon, 19 Sep 2022 22:30:41 +0800</lastBuildDate><atom:link href="https://wtding1998.github.io/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>projection onto Stiefel manifold</title><link>https://wtding1998.github.io/posts/projection/</link><pubDate>Mon, 19 Sep 2022 22:58:52 +0800</pubDate><guid>https://wtding1998.github.io/posts/projection/</guid><description>&lt;p>In this post, we give the explicit formula of the projection of \( Y \in \mathbb{R}^{n \times p} \) onto Stiefel manifold \( St(n, r) \).&lt;/p>
+&lt;h2 id="projection-of-a-rank-p-matrix">Projection of a rank \( p \) matrix&lt;/h2>
+&lt;p>The projection of \( Y \) is \( Y(Y^{\top}Y)^{-1/2} \) if \( Y \) has full column rank. Here is the proof. Consider the optimization problem
+\[
+\min \| X - Y \|^2, \mbox{ s.t. } X^{\top}X = I_{p}.
+\]
+Let \( X_{*} \) be the projection of \( Y \). Then \( X_{*} \) satisfies the optimality condition.
+Note that \( \nabla f(X_{*}) = X_{*} - Y \), we have
+\[
+0 = \nabla f(X_{*}) - X_{*} \nabla f(X_{*})^{\top}X_{*} = X_{*} - Y - X_{*} (X_{*}^{\top} - Y^{\top})X_{*} = X_{*} - Y - X_{*} + X_{*}Y^{\top}X_{*},
+\]
+which implies&lt;/p>
+&lt;p>\begin{equation}\label{eq-projection-rankp-relation-X-Y}
+Y = X_{*}Y^{\top}X_{*}.
+\end{equation}&lt;/p>
+&lt;p>Multiplying \( Y^{\top} \) on the left on both sides, we have
+\[ Y^{\top}Y = Y^{\top}X_{*} Y^{\top}X_{*} = (Y^{\top}X_{*})^2 \]
+Moreover, \( Y^{\top}X_{*} \) is symmetric, so \( Y^{\top}X_{*} = (Y^{\top}Y)^{1/2} \).
+Now we plug it into \ref{eq-projection-rankp-relation-X-Y} to obtain
+\[
+Y = X_{*} (Y^{\top}X_{*}) = X_{*} (Y^{\top}Y)^{1/2}.
+\]
+Thus, \( X_{*} = Y(Y^{\top}Y)^{-1/2} \).&lt;/p>
+&lt;h2 id="references">References&lt;/h2>
+&lt;style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}&lt;/style>&lt;div class="csl-bib-body">
+&lt;/div></description></item><item><title>Equivalent first order optimality conditions over Stiefel manifold</title><link>https://wtding1998.github.io/posts/equivalent_first_order_optimality_condition_over_stiefel_manifold/</link><pubDate>Mon, 19 Sep 2022 22:30:41 +0800</pubDate><guid>https://wtding1998.github.io/posts/equivalent_first_order_optimality_condition_over_stiefel_manifold/</guid><description>&lt;p>This post is a short summary of equivalent first order optimality conditions collected from several papers for the smooth optimization problem over Stiefel manifold.&lt;/p>
 &lt;p>Throughout this post, we consider the optimization problem \( \min f(X) \), s.t. \( X \in St(n,r) \), where \( X \in \mathbb{R}^{n \times r} \) and \( f \) is smooth. Let \( \nabla f(X) \) be the Euclidean gradient of \( f \) at \( X \). If \( X \) is a local minimizer of the problem, then the following holds:&lt;/p>
 &lt;ol>
 &lt;li>\( \operatorname{grad} f(X) \triangleq \nabla f(X) - \frac{X}{2} (X^{\top}\nabla f(X) + \nabla f(X)^{\top}X) = 0 \)&lt;/li>
