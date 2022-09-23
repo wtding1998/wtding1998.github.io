@@ -7,7 +7,7 @@ draft = false
 +++
 
 In this post, we give the explicit formula of the projection of \\( Y \in \mathbb{R}^{n \times p} \\) onto Stiefel manifold \\( St(n, r) \\).
-
+<!--more-->
 
 ## Projection of a rank \\( p \\) matrix {#projection-of-a-rank-p-matrix}
 

@@ -5,7 +5,7 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "Hugo Authors"
 +++
 
-I am a Ph.D. student in school of data science at The Chinese University of Hong Kong(Shenzhen). My advisors are Prof. Shuzhong Zhang and Dr. Jianze Li. Previously, I obtained my B.S. in Mathematics from Zhuyuan College, Shanghai Jiao Tong University.
+I am a Ph.D. student in school of data science at The Chinese University of Hong Kong(Shenzhen). My advisors are Prof. Shuzhong Zhang and Dr. Jianze Li. Previously, I obtained my B.S. in Mathematics from Zhiyuan College, Shanghai Jiao Tong University.
 
 ## Research Interest
 - Tensor Optimization
