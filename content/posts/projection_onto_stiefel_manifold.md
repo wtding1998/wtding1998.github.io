@@ -42,7 +42,7 @@ X\_{\*}^{\top}Y = X\_{\*}^{\top}X\_{\*}Y^{\top}X\_{\*} = Y^{\top}X\_{\*}.
 \\]
 It follows that \\( Y^{\top}X\_{\*} \\) is symmetric.
 Thus, \\( Y^{\top}X\_{\*} = (Y^{\top}Y)^{1/2} \\) by \eqref{eq-2}.
-Now we plug it into \ref{eq-projection-rankp-relaxtion-X-Y} to obtain
+Now we plug it into \eqref{eq-projection-rankp-relation-X-Y} to obtain
 \\[
 Y = X\_{\*} (Y^{\top}X\_{\*}) = X\_{\*} (Y^{\top}Y)^{1/2}.
 \\]
