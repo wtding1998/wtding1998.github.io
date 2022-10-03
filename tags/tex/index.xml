@@ -1,11 +1,12 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tex on Wentao Ding</title><link>https://wtding1998.github.io/tags/tex/</link><description>Recent content in tex on Wentao Ding</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2020 Notepadium.</copyright><lastBuildDate>Sun, 18 Sep 2022 22:49:20 +0800</lastBuildDate><atom:link href="https://wtding1998.github.io/tags/tex/index.xml" rel="self" type="application/rss+xml"/><item><title>projection onto Stiefel manifold</title><link>https://wtding1998.github.io/posts/projection_onto_stiefel_manifold/</link><pubDate>Fri, 30 Sep 2022 22:43:37 +0800</pubDate><guid>https://wtding1998.github.io/posts/projection_onto_stiefel_manifold/</guid><description>&lt;p>In this post, we will give some explicit formulas of the projection of a matrix \( Y \in \mathbb{R}^{n \times p} \) onto Stiefel manifold \( St(p, n) \).&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tex on Wentao Ding</title><link>https://wtding1998.github.io/tags/tex/</link><description>Recent content in tex on Wentao Ding</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2020 Notepadium.</copyright><lastBuildDate>Sun, 18 Sep 2022 22:49:20 +0800</lastBuildDate><atom:link href="https://wtding1998.github.io/tags/tex/index.xml" rel="self" type="application/rss+xml"/><item><title>projection onto Stiefel manifold</title><link>https://wtding1998.github.io/posts/projection_onto_stiefel_manifold/</link><pubDate>Mon, 03 Oct 2022 23:02:41 +0800</pubDate><guid>https://wtding1998.github.io/posts/projection_onto_stiefel_manifold/</guid><description>&lt;p>In this post, we will give some explicit formulas of the projection of a matrix \( Y \in \mathbb{R}^{n \times p} \) onto Stiefel manifold \( \St(p, n) \).&lt;/p>
 &lt;h2 id="projection-of-a-full-column-rank-matrix">Projection of a full column rank matrix&lt;/h2>
 &lt;p>We firstly consider the case when \( Y \) is of full column rank. We will show the projection of \( Y \) is \( Y(Y^{\top}Y)^{-1/2} \).&lt;/p>
 &lt;p>Consider the optimization problem over the given Stiefel manifold
 \[
 \min \| X - Y \|^2, \mbox{ s.t. } X^{\top}X = I_{p}.
 \]
-Let \( X_{*} \) be the projection of \( Y \). Then \( X_{*} \) is the global solution of this problem. So it satisfies the first order necessary condition:
+Let \( X_{*} \) be the projection of \( Y \). Then \( X_{*} \) is the global solution of this problem. So it satisfies &lt;a href="https://wtding1998.github.io/posts/equivalent_first_order_optimality_condition_over_stiefel_manifold/">First Optimality Condition over Stiefel Manifold&lt;/a>
+):
 \( \nabla f(X_{*}) - X_{*} \nabla f(X_*)^{\top}X_{*} = 0 \).
 Note that \( \nabla f(X_{*}) = X_{*} - Y \). We have
 \[
@@ -25,7 +26,7 @@ X_{*}^{\top}Y = X_{*}^{\top}X_{*}Y^{\top}X_{*} = Y^{\top}X_{*}.
 \]
 It follows that \( Y^{\top}X_{*} \) is symmetric.
 Thus, \( Y^{\top}X_{*} = (Y^{\top}Y)^{1/2} \) by \eqref{eq-2}.
-Now we plug it into \eqref{eq-projection-rankp-relation-X-Y} to obtain
+Now we plug it into \ref{eq-projection-rankp-relaxtion-X-Y} to obtain
 \[
 Y = X_{*} (Y^{\top}X_{*}) = X_{*} (Y^{\top}Y)^{1/2}.
 \]
@@ -68,7 +69,24 @@ Suppose \( UQ^{\top} = [u_1 , \ldots , u_p] \) and \( VQ^{\top} = [v_1 , \ldots 
 where the last inequality follows from \(\| u_i \| = \| v_i \| = 1, i=1 , \ldots , p\).&lt;/p>
 &lt;p>Moreover, from the inequality we can see that the projection and polar decomposition of \( Y \) are unique if \( Y \) is of full column rank since \(\sigma_{\min}(P) &amp;gt; 0\) in this case.&lt;/p>
 &lt;p>Also, it can be proof that the polar factor \( U \) is the projection of \( Y \) under any unitarily invariant norm. Check &lt;a href="https://math.stackexchange.com/questions/4492668/projection-onto-the-stiefel-manifold-and-the-orthogonal-procrustes-problem"target="_blank" rel="noopener noreferrer">https://math.stackexchange.com/questions/4492668/projection-onto-the-stiefel-manifold-and-the-orthogonal-procrustes-problem&lt;/a>
-for discussions about it.&lt;/p></description></item><item><title>Equivalent first order optimality conditions over Stiefel manifold</title><link>https://wtding1998.github.io/posts/equivalent_first_order_optimality_condition_over_stiefel_manifold/</link><pubDate>Mon, 19 Sep 2022 22:30:41 +0800</pubDate><guid>https://wtding1998.github.io/posts/equivalent_first_order_optimality_condition_over_stiefel_manifold/</guid><description>&lt;p>This post is a short summary of equivalent first order optimality conditions collected from several papers for the smooth optimization problem over Stiefel manifold.&lt;/p>
+for discussions about it.&lt;/p></description></item><item><title>Hugo Note</title><link>https://wtding1998.github.io/posts/hugo_note/</link><pubDate>Mon, 03 Oct 2022 22:56:12 +0800</pubDate><guid>https://wtding1998.github.io/posts/hugo_note/</guid><description>&lt;h2 id="cross-reference">Cross Reference&lt;/h2>
+&lt;h3 id="link-to-posts">Link to Posts&lt;/h3>
+&lt;ul>
+&lt;li>Create the link to other posts by [Hugo Note]({{&amp;lt; ref &amp;ldquo;hugo_note.md&amp;rdquo; &amp;gt;}}). See &lt;a href="https://gohugo.io/content-management/cross-references/"target="_blank" rel="noopener noreferrer">Links and Cross References | Hugo&lt;/a>
+and &lt;a href="https://scripter.co/titleref-referencing-hugo-posts-by-their-titles/"target="_blank" rel="noopener noreferrer">titleref: Referencing Hugo posts by their titles ❚ A Scripter&amp;rsquo;s Notes&lt;/a>
+for more details.&lt;/li>
+&lt;li>When export markdown by &lt;code>ox-hugo&lt;/code>, the backend will convert the angle to &lt;code>&amp;amp;lt;&lt;/code> and &lt;code>&amp;amp;gt;&lt;/code> by default. It provides a way to export the above link by
+&lt;pre tabindex="0">&lt;code class="language-:raw" data-lang=":raw">@@hugo:[description]()@@
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;/ul>
+&lt;p>See &lt;a href="https://ox-hugo.scripter.co/doc/shortcodes/#hugo-paired-shortcodes"target="_blank" rel="noopener noreferrer">Shortcodes — ox-hugo - Org to Hugo exporter&lt;/a>
+for more details.&lt;/p>
+&lt;h3 id="link-to-equations">Link to Equations&lt;/h3>
+&lt;p>It is the same as &lt;code>LaTeX&lt;/code> by &lt;code>mathjax&lt;/code>.&lt;/p>
+&lt;h2 id="emacs-configuration">Emacs Configuration&lt;/h2>
+&lt;ul>
+&lt;li>export: &lt;code>ox-hugo&lt;/code> to export markdown file. Also, &lt;code>org-hugo-auto-export-mode&lt;/code> exports markdown file once the org file being edited is saved, which is convenient if you want to check the effect frequently.&lt;/li>
+&lt;/ul></description></item><item><title>Equivalent first order optimality conditions over Stiefel manifold</title><link>https://wtding1998.github.io/posts/equivalent_first_order_optimality_condition_over_stiefel_manifold/</link><pubDate>Mon, 19 Sep 2022 22:30:41 +0800</pubDate><guid>https://wtding1998.github.io/posts/equivalent_first_order_optimality_condition_over_stiefel_manifold/</guid><description>&lt;p>This post is a short summary of equivalent first order optimality conditions collected from several papers for the smooth optimization problem over Stiefel manifold.&lt;/p>
 &lt;p>Throughout this post, we consider the optimization problem \( \min f(X) \), s.t. \( X \in St(n,r) \), where \( X \in \mathbb{R}^{n \times r} \) and \( f \) is smooth. Let \( \nabla f(X) \) be the Euclidean gradient of \( f \) at \( X \). If \( X \) is a local minimizer of the problem, then the following holds:&lt;/p>
 &lt;ol>
 &lt;li>\( \operatorname{grad} f(X) \triangleq \nabla f(X) - \frac{X}{2} (X^{\top}\nabla f(X) + \nabla f(X)^{\top}X) = 0 \)&lt;/li>
