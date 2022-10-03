@@ -15,3 +15,5 @@ The solution of the equation \\( ax^2 + bx + c = 0 \\) is
 x\_1 = \frac{-b + \sqrt{b^2 - 4ac}}{2a}\\\\\\
 x\_2 = \frac{-b - \sqrt{b^2 - 4ac}}{2a}
 \end{align}
+
+\\( \St(p, n) \\)

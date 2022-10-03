@@ -1,14 +1,14 @@
 +++
 title = "projection onto Stiefel manifold"
 author = ["Wentao Ding"]
-lastmod = 2022-09-30T22:43:37+08:00
+lastmod = 2022-10-03T23:02:41+08:00
 tags = ["Stiefel", "manifold", "optimization"]
 categories = ["manifold"]
 draft = false
 +++
 
-In this post, we will give some explicit formulas of the projection of a matrix \\( Y \in \mathbb{R}^{n \times p} \\) onto Stiefel manifold \\( St(p, n) \\).
-<!--more-->
+In this post, we will give some explicit formulas of the projection of a matrix \\( Y \in \mathbb{R}^{n \times p} \\) onto Stiefel manifold \\( \St(p, n) \\).
+
 
 ## Projection of a full column rank matrix {#projection-of-a-full-column-rank-matrix}
 
@@ -18,7 +18,7 @@ Consider the optimization problem over the given Stiefel manifold
 \\[
 \min \\| X - Y \\|^2, \mbox{ s.t. } X^{\top}X = I\_{p}.
 \\]
-Let \\( X\_{\*} \\) be the projection of \\( Y \\). Then \\( X\_{\*} \\) is the global solution of this problem. So it satisfies the first order necessary condition:
+Let \\( X\_{\*} \\) be the projection of \\( Y \\). Then \\( X\_{\*} \\) is the global solution of this problem. So it satisfies [First Optimality Condition over Stiefel Manifold]({{< ref "equivalent_first_order_optimality_condition_over_stiefel_manifold.md" >}}) ):
 \\( \nabla f(X\_{\*}) - X\_{\*} \nabla f(X\_\*)^{\top}X\_{\*} = 0 \\).
 Note that \\( \nabla f(X\_{\*}) = X\_{\*} - Y \\). We have
 \\[
@@ -42,7 +42,7 @@ X\_{\*}^{\top}Y = X\_{\*}^{\top}X\_{\*}Y^{\top}X\_{\*} = Y^{\top}X\_{\*}.
 \\]
 It follows that \\( Y^{\top}X\_{\*} \\) is symmetric.
 Thus, \\( Y^{\top}X\_{\*} = (Y^{\top}Y)^{1/2} \\) by \eqref{eq-2}.
-Now we plug it into \eqref{eq-projection-rankp-relation-X-Y} to obtain
+Now we plug it into \ref{eq-projection-rankp-relaxtion-X-Y} to obtain
 \\[
 Y = X\_{\*} (Y^{\top}X\_{\*}) = X\_{\*} (Y^{\top}Y)^{1/2}.
 \\]
