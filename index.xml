@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wentao Ding</title><link>https://wtding1998.github.io/</link><description>Recent content on Wentao Ding</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2020 Notepadium.</copyright><lastBuildDate>Mon, 03 Oct 2022 23:02:41 +0800</lastBuildDate><atom:link href="https://wtding1998.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>projection onto Stiefel manifold</title><link>https://wtding1998.github.io/posts/projection_onto_stiefel_manifold/</link><pubDate>Mon, 03 Oct 2022 23:02:41 +0800</pubDate><guid>https://wtding1998.github.io/posts/projection_onto_stiefel_manifold/</guid><description>&lt;p>In this post, we will give some explicit formulas of the projection of a matrix \( Y \in \mathbb{R}^{n \times p} \) onto Stiefel manifold \( \St(p, n) \).&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wentao Ding</title><link>https://wtding1998.github.io/</link><description>Recent content on Wentao Ding</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>©2020 Notepadium.</copyright><lastBuildDate>Mon, 03 Oct 2022 23:16:01 +0800</lastBuildDate><atom:link href="https://wtding1998.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Projection onto Stiefel Manifold</title><link>https://wtding1998.github.io/posts/projection_onto_stiefel_manifold/</link><pubDate>Mon, 03 Oct 2022 23:16:01 +0800</pubDate><guid>https://wtding1998.github.io/posts/projection_onto_stiefel_manifold/</guid><description>&lt;p>In this post, we will give some explicit formulas of the projection of a matrix \( Y \in \mathbb{R}^{n \times p} \) onto Stiefel manifold \( \St(p, n) \).&lt;/p>
 &lt;h2 id="projection-of-a-full-column-rank-matrix">Projection of a full column rank matrix&lt;/h2>
 &lt;p>We firstly consider the case when \( Y \) is of full column rank. We will show the projection of \( Y \) is \( Y(Y^{\top}Y)^{-1/2} \).&lt;/p>
 &lt;p>Consider the optimization problem over the given Stiefel manifold
@@ -6,7 +6,7 @@
 \min \| X - Y \|^2, \mbox{ s.t. } X^{\top}X = I_{p}.
 \]
 Let \( X_{*} \) be the projection of \( Y \). Then \( X_{*} \) is the global solution of this problem. So it satisfies &lt;a href="https://wtding1998.github.io/posts/equivalent_first_order_optimality_condition_over_stiefel_manifold/">First Optimality Condition over Stiefel Manifold&lt;/a>
-):
+:
 \( \nabla f(X_{*}) - X_{*} \nabla f(X_*)^{\top}X_{*} = 0 \).
 Note that \( \nabla f(X_{*}) = X_{*} - Y \). We have
 \[
@@ -26,12 +26,12 @@ X_{*}^{\top}Y = X_{*}^{\top}X_{*}Y^{\top}X_{*} = Y^{\top}X_{*}.
 \]
 It follows that \( Y^{\top}X_{*} \) is symmetric.
 Thus, \( Y^{\top}X_{*} = (Y^{\top}Y)^{1/2} \) by \eqref{eq-2}.
-Now we plug it into \ref{eq-projection-rankp-relaxtion-X-Y} to obtain
+Now we plug it into \eqref{eq-projection-rankp-relation-X-Y} to obtain
 \[
 Y = X_{*} (Y^{\top}X_{*}) = X_{*} (Y^{\top}Y)^{1/2}.
 \]
 Thus, \( X_{*} = Y(Y^{\top}Y)^{-1/2} \). The proof is complete.&lt;/p>
-&lt;h2 id="projection-by-svd">projection by SVD&lt;/h2>
+&lt;h2 id="projection-by-svd">Projection by SVD&lt;/h2>
 &lt;p>Let \( Y = U\Lambda V^{\top} \) be the SVD decomposition of \( Y \), where \( U \in \mathbb{R}^{n \times p} \) and \(\Lambda, V \in \mathbb{R}^{p \times p}\). Then \( UV^{\top} \) is the projection of \( Y \) onto the Stiefel manifold. The proof is as follows. For any \( X \) in Stiefel manifold,
 \[
 \langle Y, X \rangle= \langle U\Lambda V^{\top}, X \rangle = \langle \Lambda, U^{\top}XV \rangle.
@@ -44,7 +44,7 @@ where the equality holds when \( U^{\top}XV = I_p \). Thus,
 \| Y - X \|^2 = \| Y \|^2 + \| X \|^2 - 2 \langle Y, X \rangle \geq \| Y \|^2 + p - 2 \sum_{i=1}^p \Lambda_{i,i},
 \]
 where the equality holds when \( X = UV^{\top} \).&lt;/p>
-&lt;h2 id="projection-by-polar-decomposition">projection by polar decomposition&lt;/h2>
+&lt;h2 id="projection-by-polar-decomposition">Projection by polar decomposition&lt;/h2>
 &lt;p>Finally, we show that \( U \) is the projection of \( Y \) if the polar decomposition of \( Y \) is \( Y = UP \), where \( P \in \mathbb{R}^{p \times p} \) is positive semi-definite.
 It is sufficient to show for any other matrix \( V \) in the Stiefel manifold, we have
 \[
@@ -68,8 +68,9 @@ Suppose \( UQ^{\top} = [u_1 , \ldots , u_p] \) and \( VQ^{\top} = [v_1 , \ldots 
 \]
 where the last inequality follows from \(\| u_i \| = \| v_i \| = 1, i=1 , \ldots , p\).&lt;/p>
 &lt;p>Moreover, from the inequality we can see that the projection and polar decomposition of \( Y \) are unique if \( Y \) is of full column rank since \(\sigma_{\min}(P) &amp;gt; 0\) in this case.&lt;/p>
-&lt;p>Also, it can be proof that the polar factor \( U \) is the projection of \( Y \) under any unitarily invariant norm. Check &lt;a href="https://math.stackexchange.com/questions/4492668/projection-onto-the-stiefel-manifold-and-the-orthogonal-procrustes-problem"target="_blank" rel="noopener noreferrer">https://math.stackexchange.com/questions/4492668/projection-onto-the-stiefel-manifold-and-the-orthogonal-procrustes-problem&lt;/a>
-for discussions about it.&lt;/p></description></item><item><title>Hugo Note</title><link>https://wtding1998.github.io/posts/hugo_note/</link><pubDate>Mon, 03 Oct 2022 22:56:12 +0800</pubDate><guid>https://wtding1998.github.io/posts/hugo_note/</guid><description>&lt;h2 id="cross-reference">Cross Reference&lt;/h2>
+&lt;p>Also, it can be proof that the polar factor \( U \) is the projection of \( Y \) under any unitarily invariant norm. Check &lt;a href="https://math.stackexchange.com/questions/4492668/projection-onto-the-stiefel-manifold-and-the-orthogonal-procrustes-problem"target="_blank" rel="noopener noreferrer">orthogonality - Projection onto the Stiefel manifold and the orthogonal Procr&amp;hellip;&lt;/a>
+for discussions about it.&lt;/p></description></item><item><title>Hugo Note</title><link>https://wtding1998.github.io/posts/hugo_note/</link><pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate><guid>https://wtding1998.github.io/posts/hugo_note/</guid><description>&lt;p>This is my note for writing blogs with &lt;code>Hugo&lt;/code> and &lt;code>Emacs&lt;/code>.&lt;/p>
+&lt;h2 id="cross-reference">Cross Reference&lt;/h2>
 &lt;h3 id="link-to-posts">Link to Posts&lt;/h3>
 &lt;ul>
 &lt;li>Create the link to other posts by [Hugo Note]({{&amp;lt; ref &amp;ldquo;hugo_note.md&amp;rdquo; &amp;gt;}}). See &lt;a href="https://gohugo.io/content-management/cross-references/"target="_blank" rel="noopener noreferrer">Links and Cross References | Hugo&lt;/a>
