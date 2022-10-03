@@ -1,13 +1,15 @@
 +++
-title = "projection onto Stiefel manifold"
+title = "Projection onto Stiefel Manifold"
 author = ["Wentao Ding"]
-lastmod = 2022-10-03T23:02:41+08:00
-tags = ["Stiefel", "manifold", "optimization"]
-categories = ["manifold"]
+lastmod = 2022-10-03T23:16:01+08:00
+tags = ["Stiefel", "manifold"]
+categories = ["optimization"]
 draft = false
 +++
 
 In this post, we will give some explicit formulas of the projection of a matrix \\( Y \in \mathbb{R}^{n \times p} \\) onto Stiefel manifold \\( \St(p, n) \\).
+
+<!--more-->
 
 
 ## Projection of a full column rank matrix {#projection-of-a-full-column-rank-matrix}
@@ -18,7 +20,7 @@ Consider the optimization problem over the given Stiefel manifold
 \\[
 \min \\| X - Y \\|^2, \mbox{ s.t. } X^{\top}X = I\_{p}.
 \\]
-Let \\( X\_{\*} \\) be the projection of \\( Y \\). Then \\( X\_{\*} \\) is the global solution of this problem. So it satisfies [First Optimality Condition over Stiefel Manifold]({{< ref "equivalent_first_order_optimality_condition_over_stiefel_manifold.md" >}}) ):
+Let \\( X\_{\*} \\) be the projection of \\( Y \\). Then \\( X\_{\*} \\) is the global solution of this problem. So it satisfies [First Optimality Condition over Stiefel Manifold]({{< ref "equivalent_first_order_optimality_condition_over_stiefel_manifold.md" >}}):
 \\( \nabla f(X\_{\*}) - X\_{\*} \nabla f(X\_\*)^{\top}X\_{\*} = 0 \\).
 Note that \\( \nabla f(X\_{\*}) = X\_{\*} - Y \\). We have
 \\[
@@ -42,14 +44,14 @@ X\_{\*}^{\top}Y = X\_{\*}^{\top}X\_{\*}Y^{\top}X\_{\*} = Y^{\top}X\_{\*}.
 \\]
 It follows that \\( Y^{\top}X\_{\*} \\) is symmetric.
 Thus, \\( Y^{\top}X\_{\*} = (Y^{\top}Y)^{1/2} \\) by \eqref{eq-2}.
-Now we plug it into \ref{eq-projection-rankp-relaxtion-X-Y} to obtain
+Now we plug it into \eqref{eq-projection-rankp-relation-X-Y} to obtain
 \\[
 Y = X\_{\*} (Y^{\top}X\_{\*}) = X\_{\*} (Y^{\top}Y)^{1/2}.
 \\]
 Thus, \\( X\_{\*} = Y(Y^{\top}Y)^{-1/2} \\). The proof is complete.
 
 
-## projection by SVD {#projection-by-svd}
+## Projection by SVD {#projection-by-svd}
 
 Let \\( Y = U\Lambda V^{\top} \\) be the SVD decomposition of \\( Y \\), where \\( U \in \mathbb{R}^{n \times p} \\) and \\(\Lambda, V \in \mathbb{R}^{p \times p}\\). Then \\( UV^{\top} \\) is the projection of \\( Y \\) onto  the Stiefel manifold. The proof is as follows. For any \\( X \\) in Stiefel manifold,
 \\[
@@ -65,7 +67,7 @@ where the equality holds when \\( U^{\top}XV = I\_p \\). Thus,
 where the equality holds when \\( X = UV^{\top} \\).
 
 
-## projection by polar decomposition {#projection-by-polar-decomposition}
+## Projection by polar decomposition {#projection-by-polar-decomposition}
 
 Finally, we show that \\( U \\) is the projection of \\( Y \\) if the polar decomposition of \\( Y \\) is \\( Y = UP \\), where \\( P \in \mathbb{R}^{p \times p} \\) is positive semi-definite.
 It is sufficient to show for any other matrix \\( V \\) in the Stiefel manifold, we have
@@ -92,4 +94,4 @@ where the last inequality follows from \\(\\| u\_i \\| = \\| v\_i \\| = 1, i=1 ,
 
 Moreover, from the inequality we can see that the projection and polar decomposition of \\( Y \\) are unique if \\( Y \\) is of full column rank since \\(\sigma\_{\min}(P) > 0\\) in this case.
 
-Also, it can be proof that the polar factor \\( U \\) is the projection of \\( Y \\) under any unitarily invariant norm. Check <https://math.stackexchange.com/questions/4492668/projection-onto-the-stiefel-manifold-and-the-orthogonal-procrustes-problem> for discussions about it.
+Also, it can be proof that the polar factor \\( U \\) is the projection of \\( Y \\) under any unitarily invariant norm. Check [orthogonality - Projection onto the Stiefel manifold and the orthogonal Procr...](https://math.stackexchange.com/questions/4492668/projection-onto-the-stiefel-manifold-and-the-orthogonal-procrustes-problem) for discussions about it.

@@ -1,11 +1,15 @@
 +++
 title = "Hugo Note"
 author = ["Wentao Ding"]
-lastmod = 2022-10-03T22:56:12+08:00
-tags = ["shortcodes"]
-categories = ["hugo"]
+publishDate = 2022-10-03
+lastmod = 2022-10-03T23:25:27+08:00
 draft = false
 +++
+
+This is my note for writing blogs with `Hugo` and `Emacs`.
+
+<!--more-->
+
 
 ## Cross Reference {#cross-reference}
 
