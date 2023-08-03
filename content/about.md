@@ -5,7 +5,7 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "Hugo Authors"
 +++
 
-I am a Ph.D. student in school of data science at The Chinese University of Hong Kong(Shenzhen). My advisors are Prof. Shuzhong Zhang and Dr. Jianze Li. Previously, I obtained my B.S. in Mathematics from Zhiyuan College, Shanghai Jiao Tong University.
+I am a Ph.D. student in school of data science at The Chinese University of Hong Kong(Shenzhen). My advisors are Prof. Zizhuo Wang and Dr. Jianze Li. Previously, I obtained my B.S. in Mathematics from Zhiyuan College, Shanghai Jiao Tong University in 2020.
 
 ## Research Interest
 - Tensor Optimization
@@ -13,7 +13,7 @@ I am a Ph.D. student in school of data science at The Chinese University of Hong
 
 ## Preprint
 - [Projectively and weakly simultaneously diagonalizable matrices and their applications](https://arxiv.org/abs/2205.13245)
-, W Ding, J Li, S Zhang, arXiv preprint, arXiv:2205.13245, 2022
+, W Ding, J Li, S Zhang, arXiv preprint, arXiv:2205.13245, 2022 (Under Review)
 
 ## Contact
 E-mail: wentaoding@link.cuhk.edu.cn
