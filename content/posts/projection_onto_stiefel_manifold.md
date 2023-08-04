@@ -1,7 +1,7 @@
 +++
 title = "Projection onto Stiefel manifold"
 author = ["Wentao Ding"]
-lastmod = 2023-08-04T13:22:15+08:00
+lastmod = 2023-08-05T00:21:33+08:00
 tags = ["Optimization", "Stiefel", "Manifold"]
 categories = ["Note"]
 draft = false
@@ -94,4 +94,4 @@ where the last inequality follows from \\(\\| u\_i \\| = \\| v\_i \\| = 1, i=1 ,
 
 Moreover, from the inequality we can see that the projection and polar decomposition of \\( Y \\) are unique if \\( Y \\) is of full column rank since \\(\sigma\_{\min}(P) > 0\\) in this case.
 
-Also, it can be proof that the polar factor \\( U \\) is the projection of \\( Y \\) under any unitarily invariant norm. Check [orthogonality - Projection onto the Stiefel manifold and the orthogonal Procr...](https://math.stackexchange.com/questions/4492668/projection-onto-the-stiefel-manifold-and-the-orthogonal-procrustes-problem) for discussions about it.
+Also, it can be proved that the polar factor \\( U \\) is the projection of \\( Y \\) under any unitarily invariant norm. Check [orthogonality - Projection onto the Stiefel manifold and the orthogonal Procr...](https://math.stackexchange.com/questions/4492668/projection-onto-the-stiefel-manifold-and-the-orthogonal-procrustes-problem) for discussions about it.
