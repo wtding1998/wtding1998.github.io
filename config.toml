@@ -1,6 +1,7 @@
 baseURL = "https://wtding1998.github.io/"
 title = "Wentao Ding"
 theme = "hugo-notepadium"
+# theme = "PaperMod"
 copyright = "©2020 Notepadium."
 publishDir = "docs"
 
@@ -74,6 +75,10 @@ showTags = true             # /tags/
 [[params.nav.custom]]
 title = "About Me"
 url = "/about/"
+
+[[params.nav.custom]]
+title = "Posts"
+url = "/posts/"
 
 # [[params.nav.custom]]
 # title = "Hugo"

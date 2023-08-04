@@ -1,8 +1,5 @@
 +++
 title = "Wentao Ding 丁文涛"
-description = "Hugo, the world's fastest framework for building websites"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
 +++
 
 I am a Ph.D. student in school of data science at The Chinese University of Hong Kong(Shenzhen). My advisors are Prof. Zizhuo Wang and Dr. Jianze Li. Previously, I obtained my B.S. in Mathematics from Zhiyuan College, Shanghai Jiao Tong University in 2020.
