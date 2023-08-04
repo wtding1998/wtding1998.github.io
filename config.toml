@@ -1,10 +1,11 @@
 baseURL = "https://wtding1998.github.io/"
-title = "Wentao Ding"
-theme = "hugo-notepadium"
-# theme = "PaperMod"
-copyright = "©2020 Notepadium."
+title = "Wentao Ding 丁文涛"
+# theme = "hugo-notepadium"
+theme = "researcher"
+# theme = "Fuji"
+# copyright = "©2020 Notepadium."
 publishDir = "docs"
-
+summaryLength = 10
 languageCode = "en"  # for the RSS generation
 defaultContentLanguage = "en"
 
@@ -38,7 +39,8 @@ logo = ""
 # slogan = "100% JavaScript-free"
 #license = "<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/><img alt=Creative Commons License style=border-width:0 src=https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png /></a><br />This work is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>."
 ipv6ready = true
-
+# Posts shown in homepage
+mainSections = ["posts"]
 [params.assets]
 css = ["css/fonts.css"]
 
@@ -83,3 +85,39 @@ url = "/posts/"
 # [[params.nav.custom]]
 # title = "Hugo"
 # url = "https://gohugo.io/"
+
+# Fuji
+showLicense = true # Enable or disable license for all post
+showToc = true # Enable or disable ToC for all post
+showComments = false # Do not show comments in this post
+[menu]
+[[menu.nav]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.nav]]
+name = "Posts"
+url = "/posts/"
+weight = 2
+[[menu.nav]]
+name = "About"
+url = "/about/"
+weight = 3
+[[menu.link]]
+name = "GitHub"
+url = "https://github.com/wtding1998"
+weight = 1
+
+# researcher
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "Posts"
+url = "/posts/"
+weight = 2
+# [[menu.main]]
+# name = "CV"
+# url = "/test.pdf" # attach the file content/test.pdf
+# weight = 3
