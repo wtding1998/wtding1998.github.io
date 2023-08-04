@@ -1,8 +1,10 @@
 +++
-title = "Hugo Note"
+title = "Write blog with Hugo and Emacs"
 author = ["Wentao Ding"]
 publishDate = 2022-10-03
-lastmod = 2022-10-03T23:25:27+08:00
+lastmod = 2023-08-04T13:27:47+08:00
+tags = ["Emacs", "Hugo"]
+categories = ["Note"]
 draft = false
 +++
 

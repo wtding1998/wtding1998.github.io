@@ -1,9 +1,9 @@
 +++
 title = "Equivalent first order optimality conditions over Stiefel manifold"
 author = ["Wentao Ding"]
-lastmod = 2023-08-03T19:58:03+08:00
-tags = ["optimization", "Stiefel", "manifold"]
-categories = ["note"]
+lastmod = 2023-08-04T13:27:36+08:00
+tags = ["Optimization", "Stiefel", "Manifold"]
+categories = ["Note"]
 draft = false
 +++
 

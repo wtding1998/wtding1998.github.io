@@ -1,9 +1,9 @@
 +++
-title = "Projection onto Stiefel Manifold"
+title = "Projection onto Stiefel manifold"
 author = ["Wentao Ding"]
-lastmod = 2022-10-03T23:16:01+08:00
-tags = ["Stiefel", "manifold"]
-categories = ["optimization"]
+lastmod = 2023-08-04T13:22:15+08:00
+tags = ["Optimization", "Stiefel", "Manifold"]
+categories = ["Note"]
 draft = false
 +++
 
