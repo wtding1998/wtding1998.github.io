@@ -1,7 +1,7 @@
 baseURL = "https://wtding1998.github.io/"
 title = "Wentao Ding 丁文涛"
-# theme = "hugo-notepadium"
-theme = "researcher"
+theme = "hugo-notepadium"
+# theme = "researcher"
 # theme = "Fuji"
 # copyright = "©2020 Notepadium."
 publishDir = "docs"
@@ -14,7 +14,7 @@ hasCJKLanguage = true
 enableRobotsTXT = true
 
 # Enable relativeURLs if your site hosted on GitHub.io
-#relativeURLs = true
+relativeURLs = true
 
 # Enable Disqus
 #disqusShortname = "XXX"
@@ -38,9 +38,9 @@ readingTime = false  # show reading time after article date
 logo = ""
 # slogan = "100% JavaScript-free"
 #license = "<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/><img alt=Creative Commons License style=border-width:0 src=https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png /></a><br />This work is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>."
-ipv6ready = true
+ipv6ready = false
 # Posts shown in homepage
-mainSections = ["posts"]
+# mainSections = ["homepage"]
 [params.assets]
 css = ["css/fonts.css"]
 
