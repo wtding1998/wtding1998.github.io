@@ -4,3 +4,9 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/wtding1998/hugo-PaperMod.git
+[submodule "themes/fuji"]
+	path = themes/fuji
+	url = https://github.com/wtding1998/hugo-theme-fuji.git
+[submodule "themes/researcher"]
+	path = themes/researcher
+	url = https://github.com/wtding1998/hugo-researcher.git
