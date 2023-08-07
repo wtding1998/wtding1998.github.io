@@ -2,10 +2,10 @@
 title = "Eigenvalues and singular values of perturbed matrices"
 author = ["Wentao Ding"]
 publishDate = 2023-08-07
-lastmod = 2023-08-07T13:58:30+08:00
+lastmod = 2023-08-07T14:04:57+08:00
 tags = ["Linear Algebra"]
 categories = ["Note"]
-draft = true
+draft = false
 +++
 
 This post is about the eigenvalues and singular values of perturbed matrices.
@@ -23,7 +23,7 @@ In particular, we have that \\(b\_i + c\_n \leq a\_i \leq b\_i + c\_1\\) for \\(
 ### Fails in non-Hermitian case {#fails-in-non-hermitian-case}
 
 Weyl's inequality does not holds for non-Hermitian matrices. Consider the following example:
-\\[ B = \begin{bmatrix}1 & 3\\\ 0 & 1 \end{bmatrix}, C = \begin{bmatrix}1 & 0\\\ 3 & 1 \end{bmatrix}.\\]
+\\[ B = \begin{bmatrix}1 & 3\\\\ 0 & 1 \end{bmatrix}, C = \begin{bmatrix}1 & 0\\\\ 3 & 1 \end{bmatrix}.\\]
 Note that the eigenvalues of \\( B \\) and \\( C \\) are all positive. If Weyl's inequality holds, then the eigenvalues of \\( B + C \\) are supposed to be positive. However, \\( \det(B + C) < 0 \\).
 
 
