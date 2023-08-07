@@ -26,7 +26,8 @@ ignoreErrors = ["error-remote-getjson"]
 
 [markup.highlight]
 codeFences = true
-noClasses = false
+noClasses = true
+style = "xcode"
 
 [markup.goldmark.renderer]
 unsafe = true  # enable raw HTML in Markdown
