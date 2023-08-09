@@ -1,13 +1,13 @@
 +++
 title = "Projection onto Stiefel manifold"
 author = ["Wentao Ding"]
-lastmod = 2023-08-05T00:21:33+08:00
+lastmod = 2023-08-09T15:21:11+08:00
 tags = ["Optimization", "Stiefel", "Manifold"]
 categories = ["Note"]
 draft = false
 +++
 
-In this post, we will give some explicit formulas of the projection of a matrix \\( Y \in \mathbb{R}^{n \times p} \\) onto Stiefel manifold \\( \St(p, n) \\).
+In this post, we will give some explicit formulas of the projection of a matrix \\( Y \in \mathbb{R}^{n \times p} \\) onto Stiefel manifold \\( \St(p, n) \\). Moreover, the Lipschitz continuity of the projection will be discussed.
 
 <!--more-->
 
@@ -95,3 +95,41 @@ where the last inequality follows from \\(\\| u\_i \\| = \\| v\_i \\| = 1, i=1 ,
 Moreover, from the inequality we can see that the projection and polar decomposition of \\( Y \\) are unique if \\( Y \\) is of full column rank since \\(\sigma\_{\min}(P) > 0\\) in this case.
 
 Also, it can be proved that the polar factor \\( U \\) is the projection of \\( Y \\) under any unitarily invariant norm. Check [orthogonality - Projection onto the Stiefel manifold and the orthogonal Procr...](https://math.stackexchange.com/questions/4492668/projection-onto-the-stiefel-manifold-and-the-orthogonal-procrustes-problem) for discussions about it.
+
+
+## Lipschitz continuity of projection {#lipschitz-continuity-of-projection}
+
+
+### No global Lipschitz constant {#no-global-lipschitz-constant}
+
+The projection onto Stiefel manifold has no global Lipschitz constant. For example, consider two points \\( x = \epsilon, y = -\epsilon \\) where \\( \epsilon > 0 \\). Denote the projection map onto Stiefel manifold by \\(\pi\\). then \\(\pi(x) = 1\\) and \\(\pi(y) = -1\\). If there exists a constant \\( L > 0 \\) such that
+\\[ \\| \pi(x) - \pi(y) \\| \leq L \\| x - y \\|,  \\]
+then \\( L \geq 1 / \epsilon \\). Since \\(\epsilon\\) can be arbitrarily close to \\( 0 \\), such constant \\( L \\) does not exist.
+
+
+### Local Lipschitz constant {#local-lipschitz-constant}
+
+Fortunately, Lipschitz continuity can be established by assuming the singular values of points have a positive lower bound. Let \\( \\| \cdot \\| \\) denote an unitary invariant norm. Especially, it can be Frobenius norm or spectral norm.
+
+
+#### Square case {#square-case}
+
+When \\( n = p \\), for any two nonsingualr matrices \\( A, B \\), we have
+\\[ \\| \pi(A) - \pi(B) \\| \leq \frac{2}{\sigma\_{\min}(A) + \sigma\_{\min}(B)}\\| A - B \\|. \\]
+See Theorem VII.5.1 in (<a href="#citeproc_bib_item_1">Bhatia 1997</a>) and Theorem 1 in (<a href="#citeproc_bib_item_2">Li 1995</a>) for more details.
+
+
+#### Non-square case {#non-square-case}
+
+When \\( n > p \\), there are multiple bounds; see Theorem 2 and Remark 4 in (<a href="#citeproc_bib_item_2">Li 1995</a>). Here we list some of them here.
+
+-   \\( \frac{2}{\sigma\_{\min}(A) + \sigma\_{\min}(B)} + \frac{1}{\max\\{ \sigma\_{\min}(A), \sigma\_{\min}(B) \\}} \\). In particular, this means there exists a uniform Lipschitz constant when \\(\max\\{ \sigma\_{\min}(A), \sigma\_{\min}(B) \\}\\) has a positive lower bound.
+-   \\( \sqrt{(\frac{2}{\sigma\_{\min}(A) + \sigma\_{\min}(B)})^2 + (\frac{1}{\max\\{ \sigma\_{\min}(A), \sigma\_{\min}(B) \\}})^2} \\) when \\( \\| \cdot \\| \\) denotes Frobenius norm.
+-   \\( \frac{1}{\min\\{ \sigma\_{\min}(A), \sigma\_{min}(B) \\}} \\).
+
+## References
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Bhatia, Rajendra. 1997. <i>Matrix Analysis</i>. Vol. 169. Graduate Texts in Mathematics. New York, NY: Springer New York. <a href="https://doi.org/10.1007/978-1-4612-0653-8">https://doi.org/10.1007/978-1-4612-0653-8</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Li, Ren-Cang. 1995. “New Perturbation Bounds for the Unitary Polar Factor.” <i>Siam Journal on Matrix Analysis and Applications</i> 16 (1): 327–32.</div>
+</div>
