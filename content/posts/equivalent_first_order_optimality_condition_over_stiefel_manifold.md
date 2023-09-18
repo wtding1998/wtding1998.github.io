@@ -1,14 +1,14 @@
 +++
 title = "Equivalent first order optimality conditions over Stiefel manifold"
 author = ["Wentao Ding"]
-lastmod = 2023-08-04T20:34:01+08:00
+lastmod = 2023-09-18T20:34:01+08:00
 tags = ["Optimization", "Stiefel", "Manifold"]
 categories = ["Note"]
 draft = false
 +++
 
 This post is a short summary of equivalent first order optimality conditions collected from several papers for the smooth optimization problem over Stiefel manifold.
-Throughout this post, we consider the optimization problem \\( \min f(X) \\), s.t. \\( X \in \mathbf{St}(n,r) \\), where \\( X \in \mathbb{R}^{n \times r} \\) and \\( f \\) is smooth. Let \\( \nabla f(X) \\) be the Euclidean gradient of \\( f \\) at \\( X \\). The following holds:
+Throughout this post, we consider the optimization problem \\( \min f(X) \\), s.t. \\( X \in \mathbf{St}(n,r) \\), where \\( X \in \mathbb{R}^{n \times r} \\) and \\( f \\) is smooth. Let \\( \nabla f(X) \\) be the Euclidean gradient of \\( f \\) at \\( X \\). The following statements are equivalent:
 
 1.  \\( X \\) is a first-order stationary point of the problem.
 2.  \\( \operatorname{grad} f(X) \triangleq \nabla f(X) - \frac{X}{2} (X^{\top}\nabla f(X) + \nabla f(X)^{\top}X) = 0 \\) (by definition).
