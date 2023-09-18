@@ -13,7 +13,7 @@ I am a Ph.D. student in school of data science at The Chinese University of Hong
 , W Ding, J Li, S Zhang, arXiv preprint, arXiv:2205.13245, 2022 (Under Review)
 
 ## Contact
-E-mail: wentaoding@link.cuhk.edu.cn
+E-mail: wentaoding at link.cuhk.edu.cn
 
 DY 324, The Chinese University of Hong Kong(Shenzhen)
 
