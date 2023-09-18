@@ -15,7 +15,7 @@ Throughout this post, we consider the optimization problem \\( \min f(X) \\), s.
 3.  \\( (I - XX^{\top}) \nabla f(X) = 0 \\) and \\( X^{\top} \nabla f(X) = \nabla f(X)^{\top}X \\) (<a href="#citeproc_bib_item_1">Gao et al. 2018</a>).
 4.  \\( \nabla f(X) - X \nabla f(X)^{\top}X = 0 \\) (<a href="#citeproc_bib_item_3">Wen and Yin 2013</a>; <a href="#citeproc_bib_item_1">Gao et al. 2018</a>).
 5.  \\(  \nabla f(X) X^{\top} = X \nabla f(X)^{\top} \\) (<a href="#citeproc_bib_item_3">Wen and Yin 2013</a>).
-6.  \\(\nabla f(X) - X(2\rho \nabla f(X)^{\top} X + (1-2\rho) X^{\top}G ) = 0\\), where \\(\rho > 0\\) is a constant (<a href="#citeproc_bib_item_2">Jiang and Dai 2015</a>).
+6.  \\(\nabla f(X) - X(2\rho \nabla f(X)^{\top} X + (1-2\rho) X^{\top} \nabla f(X) ) = 0\\), where \\(\rho > 0\\) is a constant (<a href="#citeproc_bib_item_2">Jiang and Dai 2015</a>).
 
 Note that the above conditions implies that \\( \nabla f(X)^{\top}X = X^{\top} \nabla f(X) \\), that is, it is a necessary condition. When \\( n = r \\) (the feasible region is an orthogonal group), this condition becomes an equivalent condition.
 
