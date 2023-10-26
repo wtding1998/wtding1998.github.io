@@ -8,7 +8,7 @@ I am a fourth-year Ph.D. student in school of data science at The Chinese Univer
 - Manifold Optimization
 
 ## Publications
-- **Wentao Ding**, Jianze Li, Shuzhong Zhang, *Projectively and weakly simultaneously diagonalizable matrices and their applications*, 2022, [arXiv:2205.13245](https://arxiv.org/abs/2205.13245). Accepted by SIAM Journal on Matrix Analysis and Applications, to be published.
+- Wentao Ding, Jianze Li, Shuzhong Zhang, *Projectively and weakly simultaneously diagonalizable matrices and their applications*, 2022, [arXiv:2205.13245](https://arxiv.org/abs/2205.13245). Accepted by SIAM Journal on Matrix Analysis and Applications, to be published.
 
 ## Contact
 E-mail: wentaoding at link.cuhk.edu.cn
