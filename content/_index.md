@@ -1,7 +1,7 @@
 +++
 title = "Wentao Ding 丁文涛"
 +++
-I am a fourth-year Ph.D. student in school of data science at The Chinese University of Hong Kong (Shenzhen). I am fortunately advised by Prof. Zizhuo Wang and Dr. Jianze Li. Previously, I obtained my B.S. in Mathematics from Zhiyuan College, Shanghai Jiao Tong University in 2020.
+I am a fourth-year Ph.D. student in school of data science at The Chinese University of Hong Kong (Shenzhen). I am fortunately advised by Prof. Shuzhong Zhang, Prof. Zizhuo Wang and Dr. Jianze Li. Previously, I obtained my B.S. in Mathematics from Zhiyuan College, Shanghai Jiao Tong University in 2020.
 
 ## Research Interest
 - Tensor Optimization
