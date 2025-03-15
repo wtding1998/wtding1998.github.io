@@ -1,124 +1,76 @@
-baseURL = "https://wtding1998.github.io/"
 title = "Wentao Ding 丁文涛"
-# theme = "hugo-notepadium"
-theme = "researcher"
-# theme = "fuji"
-# copyright = "©2020 Notepadium."
+baseURL = "https://wtding1998.github.io/"
+theme = "wt-researcher"
+disableKinds = ["taxonomy", "term"]
+enableEmoji = true
+math = true          # enable KaTeX (https://katex.org/) globally
+googleAnalytics = ""  # add your tracking id
 publishDir = "docs"
 summaryLength = 10
 languageCode = "en"  # for the RSS generation
 defaultContentLanguage = "en"
 
-hasCJKLanguage = true
+[params]
+  author = "Forked from Olivier Roques"
+  description = "A simple monospaced resume theme for Hugo."
+  favicon = "favicon.ico"  # path to a .ico to use as favicon
+  logo = ""  # url or path to a logo to put in the header
+  [params.math]
+  enable = true # load math globally, default: false. You can always enable math on per page.
+  # use = "katex"  # builtin: "katex", "mathjax".  default: "katex"
+  use = "mathjax"  # builtin: "katex", "mathjax".  default: "katex"
+  [params.footer]
+    text = "Forked from Olivier Roques"
+    url = "https://github.com/ojroques/hugo-researcher"
+  [params.style]  # appearance options (can be omitted)
+    fontFamily = "Inconsolata"
+    fontSize = "14pt"
+    pageWidth = "750px"
+    avatarSize = "90px"
+    colorBlack = "#222222"
+    colorRed = "#dc3545"
+    # colorRed = "#3548cf"
+  # [[params.socialIcons]]
+  #   icon = "fab fa-twitter"
+  #   title = "Twitter"
+  #   url = "https://twitter.com/"
+  # [[params.socialIcons]]
+  #   icon = "fas fa-envelope"
+  #   title = "E-mail"
+  #   url = "mailto:mail@example.com"
+  # [[params.socialIcons]]
+  #   icon = "ai ai-google-scholar"
+  #   title = "Scholar"
+  #   url = "https://scholar.google.com/"
 
-enableRobotsTXT = true
+[permalinks]
+  "/" = "/:filename"
 
-# Enable relativeURLs if your site hosted on GitHub.io
-relativeURLs = true
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+  name = "Note"
+  url = "/posts/"
+  weight = 2
+  # [[menu.main]]
+  #   name = "Resume"
+  #   url = "/resume.pdf"
+  #   # 'pre' and 'post' hooks are available
+  #   # here we use an icon from Bootstrap https://icons.getbootstrap.com/
+  #   pre = '<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755S12 12 8 12s-5 1.755-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z"/></svg> '
+  #   weight = 2
+  # [[menu.main]]
+  #   name = "Contact"
+  #   url = "/contact"
+  #   weight = 3
 
-# Enable Disqus
-#disqusShortname = "XXX"
-
-# Google Analytics
-#googleAnalytics = "UA-123-45"
-
-ignoreErrors = ["error-remote-getjson"]
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown files
 
 [markup.highlight]
 codeFences = true
 noClasses = true
 style = "xcode"
-
-[markup.goldmark.renderer]
-unsafe = true  # enable raw HTML in Markdown
-
-[params]
-style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "Jan 02, 2006"  # if unset, default is "2006-01-02"
-readingTime = false  # show reading time after article date
-logo = ""
-# slogan = "100% JavaScript-free"
-#license = "<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/><img alt=Creative Commons License style=border-width:0 src=https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png /></a><br />This work is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>."
-ipv6ready = false
-# Posts shown in homepage
-# mainSections = ["homepage"]
-[params.assets]
-css = ["css/fonts.css"]
-
-[params.comments]
-enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
-
-[params.share]
-enable = false  # En/Disable share globally, default: false. You can always enable share on per page.
-addThisId = ""
-inlineToolId = ""
-
-[params.math]
-enable = true # load math globally, default: false. You can always enable math on per page.
-# use = "katex"  # builtin: "katex", "mathjax".  default: "katex"
-use = "mathjax"  # builtin: "katex", "mathjax".  default: "katex"
-
-[params.syntax]
-use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
-theme = "github"
-darkTheme = "xcode-dark"
-
-# [params.profile]
-#   enable = true
-#   avatar = "https://d33wubrfki0l68.cloudfront.net/ddf49425628d8aec7523db143916b34ae1641e11/b97e8/images/gopher-side_color.svg"
-#   name = "gohugo"
-#   bio = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."  # support markdown syntax
-#   twitter = "GoHugoIO"  # https://twitter.com/XXX
-#   github = "gohugoio"  # https://github.com/XXX
-
-[params.nav]
-showCategories = true       # /categories/
-showTags = true             # /tags/
-
-[[params.nav.custom]]
-title = "About Me"
-url = "/about/"
-
-[[params.nav.custom]]
-title = "Posts"
-url = "/posts/"
-
-# [[params.nav.custom]]
-# title = "Hugo"
-# url = "https://gohugo.io/"
-
-# Fuji
-showLicense = true # Enable or disable license for all post
-showToc = true # Enable or disable ToC for all post
-showComments = false # Do not show comments in this post
-[menu]
-[[menu.nav]]
-name = "Home"
-url = "/"
-weight = 1
-[[menu.nav]]
-name = "Posts"
-url = "/posts/"
-weight = 2
-[[menu.nav]]
-name = "About"
-url = "/about/"
-weight = 3
-[[menu.link]]
-name = "GitHub"
-url = "https://github.com/wtding1998"
-weight = 1
-
-# researcher
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-[[menu.main]]
-name = "Note"
-url = "/posts/"
-weight = 2
-# [[menu.main]]
-# name = "CV"
-# url = "/test.pdf" # attach the file content/test.pdf
-# weight = 3
