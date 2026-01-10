@@ -1,7 +1,7 @@
 +++
 title = "Wentao Ding 丁文涛"
 +++
-I am a final year Ph.D. student in school of data science at The Chinese University of Hong Kong (Shenzhen). I am fortunately advised by Prof. Shuzhong Zhang, Prof. Zizhuo Wang and Dr. Jianze Li. Previously, I obtained my B.S. in Mathematics from Zhiyuan College, Shanghai Jiao Tong University in 2020.
+I received my Ph.D. degree in 2025 from the School of Data Science at The Chinese University of Hong Kong (Shenzhen), where I was advised by Prof. Shuzhong Zhang, Prof. Zizhuo Wang, and Dr. Jianze Li. I am currently a postdoctoral fellow at The Chinese University of Hong Kong, under the supervision of Prof. Anthony Man-Cho So.
 
 ## Research Interest
 - Tensor Optimization
@@ -18,8 +18,6 @@ I am a final year Ph.D. student in school of data science at The Chinese Univers
   *This work introduces a general framework called Transformed Gradient Projection to solve the smooth optimization problems on compact submanifolds, which not only encompasses the existing algorithms but also induces new cases. We establish its weak convergence, global convergence and convergence rate by some novel inequalities about the projection onto submanifolds.*
 
 ## Contact
-E-mail: wentaoding at link.cuhk.edu.cn
+E-mail: wentaoding at cuhk.edu.hk
 
-The Chinese University of Hong Kong (Shenzhen)
-
-The 2001 Longxiang Road, Longgang District, Shenzhen
+The Chinese University of Hong Kong
